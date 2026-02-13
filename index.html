@@ -7,14 +7,15 @@
     <!-- Canonical -->
 <link rel="canonical" href="https://www.chefs-pages.com/">
 
-<!-- Favicon – inline SVG so it works without an external file -->
+<!-- Favicon - SVG with PNG fallback -->
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%2323020F'/%3E%3Ctext x='50' y='70' font-family='Georgia,serif' font-size='62' font-weight='bold' fill='%23EB7849' text-anchor='middle'%3EC%3C/text%3E%3C/svg%3E">
 <link rel="icon" type="image/png" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAFfElEQVR42u2ZT2gTTxTHvzOzu5mUlMYUjISWJqYipRCKWBRBSqGV6kEU9ORJEEQ8FMGr8Lt7LagIevVU8FZEED0UxD+02vYQVNAqVVMbW2sT9t/zILvUNo36606JdB4MhM3uMPPZ977z3lsGgLCNjWObmwagAWgAGoAGoAFoABqABqABaAAagAbQyMYY274AOOcgInDO/30AjDEYhgEhBBhj4JzDMIy6m/N9H21tbfB9X8maaKsGY6zu/5zzdfcLIejw4cP09OlT6uvrI875b+f5m2Goftuc8zB+XdeFlBLnzp3D0aNHkU6nsby8jMePH+PGjRt48+YNDMNY5/4HDx7Evn37sH//foyPj8PzPBBRY3vA2rcJgHbt2kVPnjyhWlYul2loaGhDrzl58qQar4SCpihjDEQEKSWOHTuGXC6HYrGIS5cuob+/H7ZthxpARPB9H6ZpYnl5GWfOnEF7ezts28bY2BhmZ2dhGAZc1wXnXIkOKHnzXV1dNDU1te5Ne55X0wN83193bXFxkc6ePfszVg1DlTZFK3KMMZJS0vT0NBER2bZNjuOQ67o1N7kWgud55DgO2bYdXu/t7SUAJIRobADBAoeGhoiIyHEc2owFEG7evKnMC3jUsQ8A+XwenudFlgB1dHT8jFWixk6EggW+evUKQohNz+f7PhhjeP36tdJ0OFIN4JxTLBajycnJ0I1/F/u1LAgfz/OoUChseLQ2lAasXmRnZyc9f/78f8V+AKxUKtHp06dVbp6UJEJB8mKaJh0/fpw+fPhAvu//kScE912+fJnS6bTqzdOWZIITExN1c4Bals1mQ4gq6xNltUAgYEG197eWTCbBGIvkNKlnSoshIgoLl+B3vVSWMRaO4DlVyr8lAFaDYIzBNM2Ga7YoAbC2uRGLxbCwsICJiQkUi0W8f/8eX79+RbVahRACyWQS7e3t2LNnD/bu3YtsNgshBDjnYTmtMhSUNz12795NlmX98Ry5XE5V3q9WBINy9eLFi8hkMvj+/TuklFhaWkK1WsXCwgKKxSJmZmZQqVQghAjDI5/Po7u7G+l0GrFYDC0tLSAiOI6DTCaD4eHhUEsiTd+j6gcEm+/o6MDo6ChOnTqFlZWVUMwsy0JraysymQwcx8HU1BS+fPmCeDyO7u5utLa2olQq4fPnz+FzlmXBcRxcv34dY2NjuHXrFoQQkYdDZJWgZVl0584dOnHiBHHOKR6PU1NTEzU3N5OU8pf7d+zYQYwxam5u/uWs55xTIpGgRCJB8XicYrEYZTIZevDgAWWz2bDkjmzdAP6L8siTUuLu3btgjMF1XTDGIKVEW1sbent70dPTg5WVFXz8+BEAYNs2DMPA4OAgCoUCEokEqtUqqtUqHMcBACwuLmJ+fh5zc3NYWloKq8SGCYGgtdXX14dCoYBcLodUKgUpJSqVCmZnZzE9PY2XL1/C930MDg6Cc46RkREMDAzg0KFDuH//Pj59+oR8Ph/O0dLSAtd1US6X8e7dO7x9+xajo6ORhsCmAQSJimmaGB8fRy6XQ6lUwrdv32DbNizLQiqVws6dO2FZFl68eIGrV6+iUqng/PnzePjwIZ49e4YLFy7gyJEjsCwLpVIJ8/Pz4THZ1NSEVCqFeDyO/v5+TE5ORtofjOz4Wxvnq4eUknp6eujKlSs0NzdH165do87OThoeHqZyuUy3b9+mgYEBSiaTG85hmqaK2kBNNcg5JyFEzQ8ZiUSC7t27R48ePaKZmRk6cOBAzWJKCBHO8U9Ug/UUOoCyuq/X1dUVJjyGYZAQoq7CR6n+Sr8L/KluBEquqt+/pYnQZpqeKpqd/wSAhvj0jm1uGoAGoAFoABqABqABaAAagAagAWgAGoAGsA3tBx6An8by810bAAAAAElFTkSuQmCC">
 <link rel="apple-touch-icon" href="/Icon-iOS-Default-1024x1024@1x.png">
 
 <!-- Open Graph / Social -->
 <meta property="og:site_name" content="Chef's Pages">
 <meta property="og:title" content="Chef's Pages — A modern home for your culinary world">
-<meta property="og:description" content="Recipes, wines, and the tools to cook well—beautiful enough to belong on your phone, reliable enough to trust when it matters.">
+<meta property="og:description" content="Create your new best dish, collect your favourite Wines and keep everything organised with Collections. Always stay on time.">
 <meta property="og:url" content="https://www.chefs-pages.com/">
 <meta property="og:type" content="website">
 <meta property="og:image" content="https://www.chefs-pages.com/Icon-iOS-Default-1024x1024@1x.png">
@@ -22,7 +23,7 @@
 <!-- Twitter -->
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Chef's Pages — A modern home for your culinary world">
-<meta name="twitter:description" content="Recipes, wines, and the tools to cook well—beautiful enough to belong on your phone, reliable enough to trust when it matters.">
+<meta name="twitter:description" content="Create your new best dish, collect your favourite Wines and keep everything organised with Collections. Always stay on time.">
 <meta name="twitter:image" content="https://www.chefs-pages.com/Icon-iOS-Default-1024x1024@1x.png">
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
@@ -523,7 +524,7 @@
         <div class="hero-inner">
             <h1>A modern home<br>for your <em>culinary world</em></h1>
             <div class="hero-meta">
-                <p class="hero-sub">Recipes, wines, and the tools to cook well&mdash;beautiful enough to belong on your phone, reliable enough to trust when it matters.</p>
+                <p class="hero-sub">Create your new best dish, collect your favourite Wines and keep everything organised with Collections. Always stay on time.</p>
                 <div class="hero-actions">
                     <a href="#cta" class="btn-primary">Coming soon to iPhone</a>
                     <a href="#pillars" class="btn-text">Learn more</a>
@@ -541,16 +542,16 @@
             </div>
             <div class="pillar-items">
                 <div class="pillar">
-                    <h3>Form Married with Function</h3>
-                    <p>Design that works as good as it looks. Timers you can trust on a busy evening. Sync that just works across your devices. Every detail is considered so you can focus on cooking.</p>
+                    <h3>Form &amp; Function</h3>
+                    <p>Design that works as good as it looks. Timers you can trust on a busy evening. Intuitive gestures and focus on a clean user experience&mdash;so you can focus on cooking.</p>
                 </div>
                 <div class="pillar">
                     <h3>You Stay in Control</h3>
-                    <p>Intelligence works quietly in the background&mdash;generating a recipe, predicting a wine profile, refining what you've written. It supports without getting in the way, so you can focus on the perfect flavours.</p>
+                    <p>Intelligence works quietly in the background&mdash;generating a recipe, predicting a wine profile, helping to keep track on time. Intelligence that doesn't dictate but suggests, so you can focus on the perfect flavours.</p>
                 </div>
                 <div class="pillar">
                     <h3>The Wow It Deserves</h3>
-                    <p>When you share a recipe or collection, it should look as good as it tastes. Beautiful share cards, one-tap import for friends, and a presentation that does your cooking justice.</p>
+                    <p>When you share a recipe or collection, it should look as good as it tastes. Beautiful, story-ready share cards, one-tap import for friends, and a presentation that does your cooking justice.</p>
                 </div>
             </div>
         </section>
@@ -564,7 +565,7 @@
             <div class="feature-grid">
                 <div class="feature-item">
                     <h4>Wine Cellar</h4>
-                    <p>Grow your collection with intelligent flavor profiles and confident pairing suggestions. The perfect drop for the perfect meal.</p>
+                    <p>Grow your cellar with intelligent flavour profiles and confident pairing suggestions. The perfect drop for the perfect meal.</p>
                 </div>
                 <div class="feature-item">
                     <h4>Smart Timers</h4>
@@ -575,15 +576,15 @@
                     <p>Keep making your best even better. Track your variations, compare tweaks, and choose your favourite.</p>
                 </div>
                 <div class="feature-item">
-                    <h4>Share Cards</h4>
-                    <p>Beautiful cards for Instagram Stories, Messages, or anywhere you want to share what you've made.</p>
+                    <h4>Links &amp; Share Cards</h4>
+                    <p>Intuitive sharing via a simple link. Beautiful cards for Instagram Stories, or anywhere you want to share what you've made.</p>
                 </div>
             </div>
         </section>
 
         <section class="cta" id="cta">
             <h2>Your recipes, wines, and taste&mdash;<em>all in one place</em></h2>
-            <p class="cta-sub">14-day free trial. No account required. Your data stays yours.</p>
+            <p class="cta-sub">14-day free trial. No account required.</p>
             <a href="#" class="btn-primary">Coming Soon</a>
             <p class="price-note">&pound;2.99/month or &pound;29.99/year &middot; Family Sharing supported</p>
         </section>
