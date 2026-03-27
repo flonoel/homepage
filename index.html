@@ -499,6 +499,15 @@
             }
         }
     </style>
+    <!-- Google Analytics 4 -->
+    <!-- Replace G-51RHXNJY1J with your actual GA4 Measurement ID -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-51RHXNJY1J"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-51RHXNJY1J');
+    </script>
 </head>
 <body>
 
@@ -514,7 +523,7 @@
             <li><a href="#features">Features</a></li>
             <li><a href="https://legal.chefs-pages.com/privacy.html">Privacy</a></li>
             <li><a href="https://legal.chefs-pages.com/terms.html">Terms</a></li>
-            <li><a href="https://apps.apple.com/us/app/chefs-pages/id6756326080" class="nav-cta">Download</a></li>
+            <li><a href="https://apps.apple.com/us/app/chefs-pages/id6756326080" class="nav-cta" onclick="gtag('event', 'app_store_click', {location: 'nav'})">Download</a></li>
         </ul>
     </nav>
 
@@ -525,7 +534,7 @@
             <div class="hero-meta">
                 <p class="hero-sub">Create your new best dish, collect your favourite Wines and keep everything organised with Collections. Always stay on time.</p>
                 <div class="hero-actions">
-                    <a href="https://apps.apple.com/us/app/chefs-pages/id6756326080" class="btn-primary">Download on iPhone</a>
+                    <a href="https://apps.apple.com/us/app/chefs-pages/id6756326080" class="btn-primary" onclick="gtag('event', 'app_store_click', {location: 'hero'})">Download on iPhone</a>
                     <a href="#pillars" class="btn-text">Learn more</a>
                 </div>
             </div>
@@ -584,7 +593,7 @@
         <section class="cta" id="cta">
             <h2>Your recipes, wines, and taste&mdash;<em>all in one place</em></h2>
             <p class="cta-sub">14-day free trial. No account required.</p>
-            <a href="https://apps.apple.com/us/app/chefs-pages/id6756326080" class="btn-primary">Download on the App Store</a>
+            <a href="https://apps.apple.com/us/app/chefs-pages/id6756326080" class="btn-primary" onclick="gtag('event', 'app_store_click', {location: 'cta'})">Download on the App Store</a>
             <p class="price-note">&pound;2.99/month or &pound;29.99/year</p>
         </section>
 
