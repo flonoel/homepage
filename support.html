@@ -343,6 +343,15 @@
             .footer-inner { flex-direction: column; align-items: flex-start; }
         }
     </style>
+    <!-- Google Analytics 4 -->
+    <!-- Replace G-XXXXXXXXXX with your actual GA4 Measurement ID -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-XXXXXXXXXX');
+    </script>
 </head>
 <body>
 
@@ -354,7 +363,7 @@
         <ul class="nav-links">
             <li><a href="/#pillars">Features</a></li>
             <li><a href="/contact">Contact</a></li>
-            <li><a href="https://apps.apple.com/us/app/chefs-pages/id6756326080" class="nav-cta">Download</a></li>
+            <li><a href="https://apps.apple.com/us/app/chefs-pages/id6756326080" class="nav-cta" onclick="gtag('event', 'app_store_click', {location: 'nav'})">Download</a></li>
         </ul>
     </nav>
 
@@ -556,7 +565,12 @@
             const item = btn.closest('.faq-item');
             const isOpen = item.classList.contains('open');
             document.querySelectorAll('.faq-item.open').forEach(el => el.classList.remove('open'));
-            if (!isOpen) item.classList.add('open');
+            if (!isOpen) {
+                item.classList.add('open');
+                const icon = btn.querySelector('.faq-icon');
+                const question = btn.childNodes[0].textContent.trim();
+                gtag('event', 'faq_expand', { question: question });
+            }
         }
     </script>
 

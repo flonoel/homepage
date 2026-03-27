@@ -315,6 +315,15 @@
             .channels-grid { grid-template-columns: repeat(2, 1fr); }
         }
     </style>
+    <!-- Google Analytics 4 -->
+    <!-- Replace G-XXXXXXXXXX with your actual GA4 Measurement ID -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-XXXXXXXXXX');
+    </script>
 </head>
 <body>
 
@@ -326,7 +335,7 @@
         <ul class="nav-links">
             <li><a href="/#pillars">Features</a></li>
             <li><a href="/support">Support</a></li>
-            <li><a href="https://apps.apple.com/us/app/chefs-pages/id6756326080" class="nav-cta">Download</a></li>
+            <li><a href="https://apps.apple.com/us/app/chefs-pages/id6756326080" class="nav-cta" onclick="gtag('event', 'app_store_click', {location: 'nav'})">Download</a></li>
         </ul>
     </nav>
 
@@ -349,7 +358,7 @@
                 <span class="label">General</span>
                 <h2>Questions & ideas</h2>
                 <p>Have a question, feature idea, or just want to say hi? We're always happy to hear from you.</p>
-                <a href="mailto:hello@chefs-pages.com" class="channel-link">
+                <a href="mailto:hello@chefs-pages.com" class="channel-link" onclick="gtag('event', 'contact_email_click', {address: 'hello@chefs-pages.com'})">
                     hello@chefs-pages.com
                     <svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
                         <path d="M2 7h10M7 2l5 5-5 5"/>
@@ -367,7 +376,7 @@
                 <span class="label">Support</span>
                 <h2>App help</h2>
                 <p>Something not working as expected? Our support page has FAQs, or email us directly.</p>
-                <a href="mailto:support@chefs-pages.com" class="channel-link">
+                <a href="mailto:support@chefs-pages.com" class="channel-link" onclick="gtag('event', 'contact_email_click', {address: 'support@chefs-pages.com'})">
                     support@chefs-pages.com
                     <svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
                         <path d="M2 7h10M7 2l5 5-5 5"/>
@@ -384,7 +393,7 @@
                 <span class="label">Press & partnerships</span>
                 <h2>Media & features</h2>
                 <p>Writing about Chef's Pages, or interested in a collaboration? We'd love to talk.</p>
-                <a href="mailto:hello@chefs-pages.com" class="channel-link">
+                <a href="mailto:hello@chefs-pages.com" class="channel-link" onclick="gtag('event', 'contact_email_click', {address: 'hello@chefs-pages.com'})">
                     hello@chefs-pages.com
                     <svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
                         <path d="M2 7h10M7 2l5 5-5 5"/>
